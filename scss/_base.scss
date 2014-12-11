@@ -1,0 +1,33 @@
+/* 
+Base Rules
+	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
+*/
+
+$color: #242424;
+$background-color: #beeaff;
+$background-color-alternate: #87a6ff;
+$text-box: rgba(255, 255, 255, 0.75);
+$text-box-alternate: rgba(255, 255, 255, 0.77);
+$link-text: rgb(217, 131, 255);
+$link-text-alternate: rgb(0, 31, 150);
+
+
+html {
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600);
+}
+
+body {
+    background: url('zen_stone-1158162.png') no-repeat bottom ;
+    opacity: 50%; 
+    background-color: $background-color-alternate;
+    background-size: contain;
+    @media screen and (max-width: $tablet) {
+        background-image: none;
+    }
+    
+}
+
+abbr[title="Cascading Style Sheets"]:first-of-type{
+  border: none;
+}
+
